@@ -493,28 +493,28 @@ elif app_mode == "Model Benchmarks & Plots":
     ])
     
     with tab1:
-        if os.path.exists("plots/1_class_distribution.png"):
-            st.image("plots/1_class_distribution.png", use_container_width=True, 
+        if os.path.exists("1_class_distribution.png"):
+            st.image("1_class_distribution.png", use_container_width=True, 
                      caption="Figure 1: Sensory quality raw distribution (3 to 8) and binarized target balance (52.9% Good vs 47.1% Low/Normal).")
     with tab2:
-        if os.path.exists("plots/2_correlation_heatmap.png"):
-            st.image("plots/2_correlation_heatmap.png", use_container_width=True,
+        if os.path.exists("2_correlation_heatmap.png"):
+            st.image("2_correlation_heatmap.png", use_container_width=True,
                      caption="Figure 2: Pearson correlation matrix showing strong positive association with alcohol (+0.48) and negative correlation with volatile acidity (-0.39).")
     with tab3:
-        if os.path.exists("plots/3_confusion_matrix.png"):
-            st.image("plots/3_confusion_matrix.png", use_container_width=True,
+        if os.path.exists("3_confusion_matrix.png"):
+            st.image("3_confusion_matrix.png", use_container_width=True,
                      caption="Figure 3: Confusion matrices on unseen test set (N=272). Random Forest minimizes false alarms and achieves highest correct classifications (102 TN, 113 TP).")
     with tab4:
-        if os.path.exists("plots/4_roc_curve.png"):
-            st.image("plots/4_roc_curve.png", use_container_width=True,
+        if os.path.exists("4_roc_curve.png"):
+            st.image("4_roc_curve.png", use_container_width=True,
                      caption="Figure 4: Receiver Operating Characteristic (ROC) curves. Random Forest dominates with AUC = 0.8363.")
     with tab5:
-        if os.path.exists("plots/5_model_comparison.png"):
-            st.image("plots/5_model_comparison.png", use_container_width=True,
+        if os.path.exists("5_model_comparison.png"):
+            st.image("5_model_comparison.png", use_container_width=True,
                      caption="Figure 5: Metric-by-metric comparison across cross-validation and test set evaluation.")
     with tab6:
-        if os.path.exists("plots/6_feature_importance.png"):
-            st.image("plots/6_feature_importance.png", use_container_width=True,
+        if os.path.exists("6_feature_importance.png"):
+            st.image("6_feature_importance.png", use_container_width=True,
                      caption="Figure 6: Random Forest Gini impurity importance highlighting alcohol, sulphates, and volatile acidity as primary determinants.")
 
 # -----------------------------------------------------------------------------
