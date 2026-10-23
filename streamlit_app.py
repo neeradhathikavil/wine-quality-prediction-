@@ -138,8 +138,8 @@ st.markdown("""
 # -----------------------------------------------------------------------------
 @st.cache_resource
 def load_trained_model():
-    model_path = os.path.join("model", "wine_quality_model.joblib")
-    meta_path = os.path.join("model", "model_metadata.joblib")
+    model_path = os.path.join(".",  "wine_quality_model.joblib")
+    meta_path = os.path.join(".",  "model_metadata.joblib")
     
     if not os.path.exists(model_path):
         st.error("Model file not found! Please run 'python train_model.py' first.")
